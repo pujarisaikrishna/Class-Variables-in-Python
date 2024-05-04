@@ -1,0 +1,36 @@
+# Class Variable
+class student:
+
+    school_name = 'Dehli Public school'
+
+    def __init__(self,rno,name,age):
+        self.rno = rno
+        self.name = name
+        self.age = age
+
+    def display(self):
+        print("Roll no:",self.rno)
+        print("Name:", self.name)
+        print("Age:", self.age)
+        print("school name:",student.school_name)
+
+
+
+obj1std = student(100,"Krishna",22)
+obj1std.display()
+
+print('----------------------------------------------------')
+
+obj2std = student(101,"Anna",30)
+obj2std.display()
+
+print('***************************************************')
+
+# after modificaion of school name
+
+student.school_name = 'Narayana Public School'
+
+print('----------------after modification-----------------')
+obj1std.display()
+print('---------------------------------------------------')
+obj2std.display()
